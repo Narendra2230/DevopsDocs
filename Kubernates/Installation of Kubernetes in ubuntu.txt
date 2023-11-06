@@ -52,7 +52,14 @@ kubectl apply -f https://github.com/weaveworks/weave/releases/download/v2.8.1/we
 Step 11: Execute below command for component status 
 kubectl get pods --all-namespaces
 
+
 Step 12 : execute join command in workernoder
 
 Step 13: Check the nodes status 
 kubectl get nodes 
+
+Note: we have to install apache2 in both kmaster and workernode 
+sudo apt-get update -y
+sudo apt-get install apache2 -y
+
+
